@@ -9,7 +9,7 @@ namespace Verdure.Kame.Core
         // Some SG90s can do 180 angle range but some other will be oscillating on the edge values
         // Max angle which doesn't cause any issues found experimentally was as below.
         // The ones which can do 180 will have the minimum pulse width at around 520uS.
-        private const int AngleRange = 173;
+        private const int AngleRange = 180;
         private const int MinPulseWidthMicroseconds = 600;
         private const int MaxPulseWidthMicroseconds = 2590;
 

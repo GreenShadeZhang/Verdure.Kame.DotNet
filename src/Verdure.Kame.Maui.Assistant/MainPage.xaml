@@ -81,6 +81,18 @@
                             Clicked="Button_Clicked"
                             Text="左转" />
                         <Button
+                            x:Name="HomePos"
+                            Clicked="Button_Clicked"
+                            Text="HomePos" />
+                        <Button
+                            x:Name="SayHi"
+                            Clicked="Button_Clicked"
+                            Text="SayHi" />
+                        <Button
+                            x:Name="Bow"
+                            Clicked="Button_Clicked"
+                            Text="Bow" />
+                        <Button
                             x:Name="TurnRight"
                             Clicked="Button_Clicked"
                             Text="右转" />
