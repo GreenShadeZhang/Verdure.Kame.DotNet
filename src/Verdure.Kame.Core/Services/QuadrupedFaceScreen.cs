@@ -39,6 +39,7 @@ namespace Verdure.Kame.Core
             lcd.Init();
 
             lcd.SetWindows(0, 0, 172, 320);
+            lcd.Clear();
         }
         public Task ShowImageAsync(byte[] data)
         {
