@@ -365,6 +365,10 @@ namespace Verdure.Kame.Core
 
         public void Dispose()
         {
+            foreach (var servoMotor in servoMotors)
+            {
+                servoMotor.Dispose();
+            }
             servoMotors.Clear();
             device.Dispose();
             pca9685.Dispose();
