@@ -36,6 +36,8 @@ namespace Verdure.Kame.Core
 
             lcd = new ST7789V3(dataCommandPin, senderDevice, resetPin, pwmChannel, shouldDispose: false);
 
+            lcd.Reset();
+
             lcd.Init();
 
             lcd.SetWindows(0, 0, 172, 320);
