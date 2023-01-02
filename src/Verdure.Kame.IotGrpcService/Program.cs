@@ -11,8 +11,8 @@ builder.Services.AddGrpc(option =>
 {
     option.MaxReceiveMessageSize = null;
 });
-builder.Services.AddTransient<IQuadruped, Quadruped>();
-builder.Services.AddTransient<IQuadrupedFaceScreen, QuadrupedFaceScreen>();
+builder.Services.AddSingleton<IQuadruped, Quadruped>();
+builder.Services.AddSingleton<IQuadrupedFaceScreen, QuadrupedFaceScreen>();
 
 var app = builder.Build();
 
