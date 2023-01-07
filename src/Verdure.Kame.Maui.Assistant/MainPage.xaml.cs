@@ -45,6 +45,10 @@ namespace Verdure.Kame.Maui.Assistant
             {
                 Result.Text = ex.Message;
             }
+            finally
+            {
+                ProcessRing.IsRunning = false;
+            }
         }
         public async Task<FileResult> PickAndShow(PickOptions options)
         {
